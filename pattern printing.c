@@ -1,8 +1,10 @@
 #include <stdio.h>
 void right_triangle() {
 	int i,j;
-	for (i=0; i<5; i++) {
-		for (j=0; j<=i; j++) {
+	for (i=0; i<5; i++) 
+	{
+		for (j=0; j<=i; j++)
+		{
 			printf(" * ");
 		}
 		printf("\n");
@@ -12,8 +14,10 @@ void right_triangle() {
 {
 	
 	int i,j,k;
-	for (i=1; i<=5; i++) {
-		for (j=5; j>=i; j--) {
+	for (i=0; i<=5; i++) 
+	{
+		for (j=5; j>=i; j--) 
+		{
 			printf(" ");
 		}
 		for (k=1; k<=i; k++) {
@@ -27,13 +31,15 @@ void inverted()
  {
 	int i,j,k,samp=1;
 	
-	for (i=5; i>=1; i--) {
+	for (i=5; i>=1; i--) 
+	{
 		for (k=samp; k>=0; k--) 
 		{
-					printf(" ");
+			printf(" ");
 			
 		}
-		for (j=i; j>=1; j--) {
+		for (j=i; j>=1; j--) 
+		{
 			printf("*");
 		}
 		samp = samp + 1;
@@ -53,14 +59,17 @@ void inverted2()
 	}
 }
 void pyramid()
- { 	int i,j,k,t=0;
-	for (i=1; i<=5; i++) {
-		for (k=t; k<5; k++) {
+ { 	int i,j,k,c=5;
+	for (i=1; i<=5; i++) 
+	{
+		for (k=1; k<=c; k++) 
+		{
 			printf(" ");
 		}
-		for (j=0; j< i; j++) {
-			printf(" * ");
-			t = t + 1;
+		c--;
+		for (j=1; j<=2*i-1; j++)
+		{
+			printf("*");
 		}
 		printf("\n");
 	}
